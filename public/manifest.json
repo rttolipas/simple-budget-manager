@@ -1,6 +1,6 @@
 {
   "short_name": "Budget Monitor",
-  "name": "Simple budget monitor app - made from ReactJS",
+  "name": "Basic app made from ReactJS",
   "icons": [
     {
       "src": "favicon.ico",

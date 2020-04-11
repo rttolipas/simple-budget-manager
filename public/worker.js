@@ -1,5 +1,5 @@
-let CACHE_NAME = 'Budget Monitor';
-let urlsToCache = [
+Let CACHE_NAME = 'budget-monitor-app';
+Let urlsToCache = [
   '/',
   '/completed'
 ];
@@ -33,7 +33,7 @@ self.addEventListener('fetch', event => {
 
 // Update a service worker
 self.addEventListener('activate', event => {
-  let cacheWhitelist = ['Budget Monitor'];
+  Let cacheWhitelist = ['budget-monitor-app'];
   event.waitUntil(
     caches.keys().then(cacheNames => {
       return Promise.all(

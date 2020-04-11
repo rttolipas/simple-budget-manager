@@ -29,6 +29,7 @@ class AddList extends Component {
         const { text, amount } = this.state
         if(!text || !amount){
             alert("Please enter list and amount first.");
+            this.textInput.current.focus();
             return
         }
         this.props.addList(this.state);

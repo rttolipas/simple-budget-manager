@@ -14,6 +14,7 @@ const Board = () => {
     })
 
     const computeTotal = () =>{
+        if(localStorage.getItem('_lists') == '') return;
         const listItems = JSON.parse(localStorage.getItem('_lists'));
         if(listItems.length > 0){
             const amount = listItems.map(item => item.amount);

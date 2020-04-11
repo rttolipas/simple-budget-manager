@@ -7,7 +7,7 @@ const Header = () => {
         <Menu size='large' borderless>
             <Menu.Item>
                 <H as='h3'>
-                    Budget Manager
+                    React Budget App 
                 </H>
             </Menu.Item>
         </Menu>

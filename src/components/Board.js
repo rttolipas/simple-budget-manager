@@ -27,7 +27,7 @@ const Board = () => {
     }
 
     return (
-        <Card fluid raised color='red'>
+        <Card fluid raised color='red'
             <Card.Content>
                 <Card.Meta>
                     Total Expenses

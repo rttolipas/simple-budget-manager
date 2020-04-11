@@ -8,11 +8,15 @@ class AddList extends Component {
     
         this.state = {
              text: '',
-             amount: 0,
+             amount: '',
              done: false
         }
 
         this.textInput = React.createRef()
+    }
+
+    componentDidMount() {
+        this.textInput.current.focus();
     }
 
     changeHandler = (event) => {
@@ -30,8 +34,9 @@ class AddList extends Component {
         this.props.addList(this.state);
         this.setState({
             text: '',
-            amount: 0
+            amount: ''
         })
+        this.textInput.current.focus();
     }  
 
     render() {
@@ -41,6 +46,7 @@ class AddList extends Component {
                     <Input fluid type='text' 
                     name="text"
                     value={this.state.text} 
+                    ref={this.textInput}
                     onChange={this.changeHandler} 
                     placeholder='List Name...' />
                 </Grid.Column>
@@ -52,7 +58,7 @@ class AddList extends Component {
                     placeholder="Amount..." />
                 </Grid.Column>
                 <Grid.Column width={3} textAlign="right">
-                    <Button fluid color="blue" onClick={this.handleSubmit} icon="add"></Button>
+                    <Button fluid color="green" onClick={this.handleSubmit} icon="add"></Button>
                 </Grid.Column>
             </Grid>
         )

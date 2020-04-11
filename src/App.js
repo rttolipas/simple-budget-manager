@@ -55,7 +55,7 @@ class App extends Component {
         const storageItem = localStorage.getItem('_lists')
         const item = {
             id: uuidv4(),
-            text,
+            text: text.trim(),
             amount: parseFloat(amount),
             done
         }

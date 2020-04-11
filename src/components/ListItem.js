@@ -14,7 +14,7 @@ const ListItem = ({ doneList, deleteList, text, amount, done, id }) => {
                 <Checkbox label={text} 
                 onClick={() => doneList(id)}
                 checked={done}
-                style={{ textDecoration: done ? 'line-through': 'none' }}
+                style={{ textDecoration: done ? 'line-through': 'none', color: done ? 'red': '' }}
                 className={appStyle.listText} />
             </Grid.Column>
             <Grid.Column width={4} verticalAlign="middle" textAlign="right">

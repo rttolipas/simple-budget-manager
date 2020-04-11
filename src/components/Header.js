@@ -1,14 +1,14 @@
 import React from 'react'
-import { Menu, Header as H } from 'semantic-ui-react'
+import { Menu, Image } from 'semantic-ui-react'
+
+import appStyle from '../App.module.css'
 
 const Header = () => {
     return (
         <>
         <Menu size='large' borderless>
             <Menu.Item>
-                <H as='h3'>
-                    React Budget App 
-                </H>
+                <Image src="/logo.png" className={appStyle.logo} />
             </Menu.Item>
         </Menu>
         </>
